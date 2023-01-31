@@ -46,9 +46,19 @@ function isPositive( number ) {
 }
 // Call the function to test each outcome (true & false) 
 // Write a separate console.log statement for each outcome
-console.log( 'isPositive - should say true', isPositive(3) );
-console.log( 'isPositive - should say false', isPositive(0) );
-console.log( 'isPositive - should say false', isPositive(-3) );
+
+function isPositive(number) {
+  return number > 0;
+}
+console.log( 'isPositive - should say true', (isPositive(3))); 
+
+
+console.log( 'isPositive - should say false', (isPositive(0)));
+
+
+console.log( 'isPositive - should say false', (isPositive(-3)));
+
+
 
 
 // 6. Function to return the _last_ item in an array. If the 
