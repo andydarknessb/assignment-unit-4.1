@@ -77,9 +77,21 @@ console.log(getLast(array));
 // 7. Function to find a value in an array. Return true if the 
 //    value is found and false otherwise. Use a loop;
 //    DO NOT use Array.includes, Array.indexOf, or Array.find 
-function find( value, array ){
+
+function findArray(value, array) {
+  for(let i = 0 ; i < array.length; i++) {
+    if (array[i] === value) {
+      return true;
+    }
+  }
+  return false; 
   
 }
+
+console.log(findArray(3, [1, 2, 3, 4, 5]));
+console.log(findArray(6, [1, 2, 3, 4, 5]));
+
+
 
 // ----------------------
 // Stretch Goals
